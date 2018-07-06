@@ -85,17 +85,12 @@ var webpackConfig = merge(baseWebpackConfig, {
 			  return module.context && module.context.includes('node_modules');
 		  }
 	  }),
-	  new webpack.optimize.CommonsChunkPlugin({
-		  name: 'manifest',
-		  minChunks: Infinity
-	  }),
-
 	  // extract webpack runtime and module manifest to its own file in order to
 	  // prevent vendor hash from being updated whenever app bundle is updated
-	  // new webpack.optimize.CommonsChunkPlugin({
-		 //  name: 'manifest',
-		 //  chunks: Infinity
-	  // }),
+	  new webpack.optimize.CommonsChunkPlugin({
+		  name: 'manifest',
+		  chunks: Infinity
+	  }),
     // copy custom static assets
     new CopyWebpackPlugin([
       {
