@@ -1,7 +1,7 @@
 <template>
     <Layout :title="'首页'" :hasFooter="true">
 
-        <div>首页内容</div>
+        <div class="test">首页内容</div>
 
     </Layout>
 </template>
@@ -14,5 +14,7 @@
 	}
 </script>
 <style rel="stylesheet/scss" lang="scss" scoped>
-
+.test {
+    color: red;
+}
 </style>

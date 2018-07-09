@@ -1,6 +1,6 @@
 <template>
     <Layout>
-        <button @click="test">测试aja x</button>
+        <button @click="test" class="test2">测试aja x</button>
     </Layout>
 </template>
 <script>
@@ -16,3 +16,8 @@
         }
     }
 </script>
+<style scoped>
+    .test2 {
+        color: #FFF;
+    }
+</style>
