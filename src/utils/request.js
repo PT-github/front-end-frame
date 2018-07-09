@@ -1,10 +1,10 @@
 import axios from 'axios'
 import { Toast } from 'vant'
-
+const config = require('../config').default
 // create an axios instance
-console.log(process.env)
+
 const service = axios.create({
-	baseURL: process.env.SERVICE_SITE, // api的base_url
+	baseURL: config.restful.service, // api的base_url
 	timeout: 5000 // request timeout
 })
 // respone interceptor

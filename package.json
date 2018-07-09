@@ -6,9 +6,10 @@
   "private": true,
   "scripts": {
     "dev": "cross-env NODE_ENV=development node build/dev-server.js",
-    "test": "cross-env NODE_ENV=test node build/dev-server.js",
-    "start": "node build/dev-server.js",
-    "build": "cross-env NODE_ENV=production node build/build.js"
+    "test": "cross-env NODE_ENV=testing node build/dev-server.js",
+    "start": "npm run dev",
+    "build:test": "cross-env NODE_ENV=testing node build/build.js",
+    "build:prod": "cross-env NODE_ENV=production node build/build.js"
   },
   "dependencies": {
     "axios": "^0.18.0",

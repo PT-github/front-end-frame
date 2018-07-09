@@ -1,7 +1,6 @@
 var merge = require('webpack-merge')
-var commonEnv = require('./common.env')
+var devEnv = require('./dev.env')
 
-module.exports = merge(commonEnv, {
-	NODE_ENV: 'test',
-	SERVICE_SITE: '"https://api-test"'
+module.exports = merge(devEnv, {
+	NODE_ENV: '"testing"'
 })
