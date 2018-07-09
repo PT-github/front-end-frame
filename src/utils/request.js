@@ -1,6 +1,8 @@
 import axios from 'axios'
 import { Toast } from 'vant'
-const config = require('../config').default
+const config = require('../config/' + process.env.SERVICE_CONFIG)
+console.log(config)
+
 // create an axios instance
 
 const service = axios.create({

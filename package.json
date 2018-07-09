@@ -5,11 +5,11 @@
   "author": "pengtao <pengtao@cnhnkj.com>",
   "private": true,
   "scripts": {
-    "dev": "cross-env NODE_ENV=development node build/dev-server.js",
-    "test": "cross-env NODE_ENV=testing node build/dev-server.js",
+    "dev": "node build/dev-server.js dev",
+    "test": "node build/dev-server.js test",
     "start": "npm run dev",
-    "build:test": "cross-env NODE_ENV=testing node build/build.js",
-    "build:prod": "cross-env NODE_ENV=production node build/build.js"
+    "build:test": "node build/build.js test",
+    "build:prod": "node build/build.js prod"
   },
   "dependencies": {
     "axios": "^0.18.0",
